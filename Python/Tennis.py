@@ -1,7 +1,7 @@
 from unityagents import UnityEnvironment
 import numpy as np
 
-env = UnityEnvironment(file_name="Tennis.app")
+env = UnityEnvironment(file_name="../Tennis.app")
 
 brain_name = env.brain_names[0]
 brain = env.brains[brain_name]
