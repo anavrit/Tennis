@@ -17,7 +17,7 @@ The Deep Deterministic Policy Gradients (DDPG) algorithm is an off-policy, model
 ACTOR:
 
 `Actor(
-  (fc1): Linear(in_features=8, out_features=128, bias=True) \n
+  (fc1): Linear(in_features=8, out_features=128, bias=True)
   (bn1): BatchNorm1d(fc1)
   (fc2): Linear(in_features=128, out_features=128, bias=True)
   (bn2): BatchNorm1d(fc2)
@@ -60,5 +60,5 @@ The environment was solved in **1329** episodes!	Average Reward: 0.51 <br>
 A number of algorithms have the potential to improve the performance of DDPG for the Tennis environment. A few key ideas for future work are:
 
 1. [Trust Region Policy Optimization](https://arxiv.org/pdf/1604.06778.pdf) (TRPO) and Truncated Natural Policy Gradient (TNPG) should achieve better performance than DDPG but could be even further improved. <br><br>
-2. [D4PG](https://openreview.net/pdf?id=SyZipzbCb) or the Distributional Deterministic Deep Policy Gradient algorithm, has been shown to achieve state of the art performance on a number of challenging continuous control problems.
+2. [D4PG](https://openreview.net/pdf?id=SyZipzbCb) or the Distributional Deterministic Deep Policy Gradient algorithm, has been shown to achieve state of the art performance on a number of challenging continuous control problems.<br><br>
 3. Adding more fully-connected hidden layers and optimize hyperparameters (particularly the actor and critic learning rates) using grid search.
