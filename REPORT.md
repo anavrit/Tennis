@@ -2,7 +2,7 @@
 
 [image1]: https://user-images.githubusercontent.com/10624937/42135623-e770e354-7d12-11e8-998d-29fc74429ca2.gif "Trained Agent"
 
-# Project #1: REPORT
+# REPORT
 
 For this project, I trained two agents in the [Tennis](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis) environment. The two agents control rackets to bounce a ball over a net. If an agent hits the ball over the net, it receives a reward of +0.1.  If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01.  Thus, the goal of each agent is to keep the ball in play. The environment was solved using the starter code provided by Udacity.
 
@@ -17,7 +17,7 @@ The Deep Deterministic Policy Gradients (DDPG) algorithm is an off-policy, model
 ACTOR:
 
 `Actor(
-  (fc1): Linear(in_features=8, out_features=128, bias=True)
+  (fc1): Linear(in_features=8, out_features=128, bias=True) \n
   (bn1): BatchNorm1d(fc1)
   (fc2): Linear(in_features=128, out_features=128, bias=True)
   (bn2): BatchNorm1d(fc2)
