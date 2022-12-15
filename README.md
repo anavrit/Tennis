@@ -39,7 +39,7 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 3. Clone the following repository and install the additional dependencies:
 
-  `git clone https://github.com/anavrit/Deep-Q-Learning-Networks.git`<br>
+  `git clone https://github.com/anavrit/Tennis.git`<br>
   `cd Tennis`<br>
   `pip install -r requirements.txt`
 
