@@ -28,7 +28,7 @@ state_size = states.shape[1]
 
 agents = Agents(state_size=state_size, action_size=action_size, num_agents=len(env_info.agents), random_seed=5)
 
-def maddpg(n_episodes=2000, max_t=1000, print_every=10):
+def ddpg(n_episodes=2000, max_t=1000, print_every=100):
     scores_deque = deque(maxlen=100)
     scores = []
     for i_episode in range(1, n_episodes+1):
@@ -62,7 +62,7 @@ def maddpg(n_episodes=2000, max_t=1000, print_every=10):
 
     return scores
 
-scores = maddpg()
+scores = ddpg()
 
 torch.save(agents.actor_local.state_dict(), '../Resources/checkpoint_actor.pth')
 torch.save(agents.critic_local.state_dict(), '../Resources/checkpoint_critic.pth')
